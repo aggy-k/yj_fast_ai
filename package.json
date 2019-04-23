@@ -1,0 +1,9 @@
+{
+  "name": "Fast-AI-Test",
+  "version": "1.0.0",
+  "description": "Testing YJ's Fast AI frontend forms",
+  "main": "index.js",
+  "author": "Aggy",
+  "license": "UNLICENSED",
+  "private": null
+}
