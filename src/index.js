@@ -34,7 +34,12 @@ function analyze() {
     xhr.onload = function(e) {
         if (this.readyState === 4) {
             var response = JSON.parse(e.target.responseText);
-            el('result-label').innerHTML = `Result = ${response['result']}`; // This is to show the result on the HTML
+            el('gentitle').innerHTML = `${response['title']}`; // This is to show the result on the HTML
+            el('genaim').innerHTML = `${response['aim']}`; // This is to show the result on the HTML
+            el('gencont').innerHTML = `${response['cont']}`; // This is to show the result on the HTML
+            el('genval').innerHTML = `${response['val']}`; // This is to show the result on the HTML
+            el('genmethod').innerHTML = `${response['method']}`; // This is to show the result on the HTML
+            el('gendeli').innerHTML = `${response['deli']}`; // This is to show the result on the HTML
         }
         el('analyze-button').innerHTML = 'Analyze';
     }
@@ -44,8 +49,9 @@ function analyze() {
     // I assume it will be something like:
     // xhr.send({projectTitle: projectTitle, projectAim: projectAim, etc......})
 
-    // var fileData = new FormData();
+    var fileData = new FormData();
     // fileData.append('file', uploadFiles[0]);
-    // xhr.send(fileData);
+    fileData.append('projectTitle', projectTitle);
+    xhr.send(fileData);
 }
 
