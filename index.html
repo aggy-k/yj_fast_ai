@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
+    <script src='../static/client.js'></script>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -15,49 +15,39 @@
             <div class="form-group row">
               <label for="projectTitle" class="col-sm-4 col-form-label">Project Title</label>
               <div class="col-sm-8">
-                <input type="text" class="form-control" id="projectTitle" placeholder="Your project title..">
+                <input type="text" class="form-control" id="projectTitle" placeholder="Proj title prompt..">
               </div>
             </div>
-            <div class="form-group row">
-              <label for="projectAim" class="col-sm-4 col-form-label">Aim</label>
-              <div class="col-sm-8">
-                <input type="text" class="form-control" id="projectAim" placeholder="The aim..">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="projectContext" class="col-sm-4 col-form-label">Context</label>
-              <div class="col-sm-8">
-                <input type="text" class="form-control" id="projectContext" placeholder="The context..">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="projectValue" class="col-sm-4 col-form-label">Value</label>
-              <div class="col-sm-8">
-                <input type="text" class="form-control" id="projectValue" placeholder="The value..">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="projectMethod" class="col-sm-4 col-form-label">Method</label>
-              <div class="col-sm-8">
-                <input type="text" class="form-control" id="projectMethod" placeholder="The method..">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label for="projectDeliverable" class="col-sm-4 col-form-label">Deliverable</label>
-              <div class="col-sm-8">
-                <input type="text" class="form-control" id="projectDeliverable" placeholder="And the deliverable..">
-              </div>
-            </div>
-            <button id='analyze-button' type='button' onclick='analyze()' class="btn btn-success w-100">Submit</button>
+            <button id='analyze-button' type='button' onclick='analyze()' class="btn btn-success w-100">NLP Generate</button>
           </form>
-
         </div>
-        <div class="col-12 col-md-5 p-3 m-1 box" id="result-label">
-          Here's where the response is.
+        <div class="col-12 col-md-5 p-3 m-1 box">
+          <label for="gentitle" class="col-sm-4 col-form-label">Proj Title:</label>
+          <div class="col-sm-8" id="gentitle">
+          Waiting for NLP Generate.
+          </div>
+          <label for="genaim" class="col-sm-4 col-form-label">Aim</label>
+          <div class="col-sm-8" id="genaim">
+          Waiting for NLP Generate.
+          </div>
+          <label for="gencont" class="col-sm-4 col-form-label">Context</label>
+          <div class="col-sm-8" id="gencont">
+          Waiting for NLP Generate.
+          </div>
+          <label for="genval" class="col-sm-4 col-form-label">Value</label>
+          <div class="col-sm-8" id="genval">
+          Waiting for NLP Generate.
+          </div>
+          <label for="genmethod" class="col-sm-4 col-form-label">Method</label>
+          <div class="col-sm-8" id="genmethod">
+          Waiting for NLP Generate.
+          </div>
+          <label for="gendeli" class="col-sm-4 col-form-label">Deliverable</label>
+          <div class="col-sm-8" id="gendeli">
+          Waiting for NLP Generate.
+          </div>
         </div>
       </div>
     </div>
-
-    <script src="bundle.js"></script>
   </body>
 </html>
